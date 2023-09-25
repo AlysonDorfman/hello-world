@@ -8,7 +8,7 @@ nav {
 section {
   width: 30%;
   display: inline-block;
-  height: auto;
+  vertical-align: top;
   background-color: #fee3c4;
 }
 
