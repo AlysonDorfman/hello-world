@@ -10,6 +10,14 @@ section {
   height: auto;
   background-color: #fee3c4;
 }
-p {
-  padding: 1px;
+
+.main-paragraphs {
+  padding: 10px;
 }
+
+body {
+  background-color: #ddb887;
+}
+
+
+
