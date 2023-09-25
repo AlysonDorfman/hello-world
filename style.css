@@ -2,12 +2,14 @@
 
 nav {
     text-align: right;
+    background-color: #fee3c4;
   }
 section {
   width: 30%;
   display: inline-block;
-  height:auto;
+  height: auto;
+  background-color: #fee3c4;
 }
 p {
-  padding: 10px;
+  padding: 1px;
 }
