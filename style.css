@@ -4,6 +4,7 @@ nav {
     text-align: right;
     background-color: #fee3c4;
   }
+
 section {
   width: 30%;
   display: inline-block;
@@ -19,5 +20,7 @@ body {
   background-color: #ddb887;
 }
 
-
+section img {
+  width: 100%;
+}
 
