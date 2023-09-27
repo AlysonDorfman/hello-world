@@ -1,14 +1,5 @@
 'use strict';
-
-       // console.log("I am in the HTML"); 
-       alert("Welcome to my page!");
-
-       // I put this in the HTML
-              //let usersName = getName();
-       let usersDogtype = getUsersDogtype();
-       let dogFan = getDogFan();
-       
-
+    
        function getName(){
               const theirName = prompt("By the way, what's your name?");
               console.log("User says their name is " + theirName);
@@ -38,6 +29,31 @@
               const theirDogtype = prompt("Would you say you prefer 1) classic, 2) wiener, or 3) long haired dogs? Please answer with a 1, 2, or 3.");
               console.log("User says their favorite dog type is number " + theirDogtype);
               return theirDogtype;
+       }
+
+       function writeDogtypeMessage(){
+              if (usersDogtype == "1"){
+                     document.write("Hey, " + usersName + ", I'm going to have to agree with you on your favorite dog type! Us classic guys gotta stick together!");
+                 } else if (usersDogtype == "2"){
+                     document.write("Hey, " + usersName + ", I'm going to have to agree with you on your favorite dog type! Us little guys gotta stick together!");
+                 }  else if (usersDogtype == "3"){
+                     document.write("Hey, " + usersName + ", I'm going to have to agree with you on your favorite dog type! Us shaggy guys gotta stick together!");
+                 } 
+                 return 
+       }
+
+       function writeJoke(){
+              if (usersName == "Kassie"){
+                     document.write("Wait! " + usersName + ", how did your photo get on my page!?!");
+                 } else if (usersName == "Adam"){
+                     document.write("Wait! " + usersName + ", how did your photo get on my page!?!");
+                 } else if (usersName == "Cameron"){
+                     document.write("Wait " + usersName + ", how did your photo get on my page!?!");
+                 } else if (usersName == "Cameron Walden"){
+                     document.write("Wait " + usersName + ", how did your photo get on my page!?!");
+                 } else if (usersName == "Adam Owada"){
+                     document.write("Wait " + usersName + ", how did your photo get on my page!?!");
+                 } 
        }
 
        
