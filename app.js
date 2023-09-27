@@ -26,17 +26,34 @@
        }
 
        function getUsersDogtype(){
-              const theirDogtype = prompt("Would you say you prefer 1) classic, 2) wiener, or 3) long haired dogs? Please answer with a 1, 2, or 3.");
+              let theirDogtype;
+              do {
+                     theirDogtype = prompt("Would you say you prefer 1) classic, 2) wiener, or 3) long haired dogs? Please answer with a 1, 2, or 3.");
+              if (theirDogtype !== "1" && theirDogtype !== "2" && theirDogtype !== "3") {
+                     alert ("Grrrr! Wait a minute, that wasn't one of the choices! Please enter a 1, 2, or 3, for your favorite type of dog. ◡̈");
+              }
+              } while (theirDogtype !== "1" && theirDogtype !== "2" && theirDogtype !== "3");
+             
               console.log("User says their favorite dog type is number " + theirDogtype);
               return theirDogtype;
        }
 
-       function writeDogtypeMessage(){
+       function writeDogtypeMessageOne(){
               if (usersDogtype == "1"){
                      document.write("Hey, " + usersName + ", I'm going to have to agree with you on your favorite dog type! Us classic guys gotta stick together!");
-                 } else if (usersDogtype == "2"){
+                 } 
+                 return 
+       }
+
+       function writeDogtypeMessageTwo(){
+              if (usersDogtype == "2"){
                      document.write("Hey, " + usersName + ", I'm going to have to agree with you on your favorite dog type! Us little guys gotta stick together!");
-                 }  else if (usersDogtype == "3"){
+                 }  
+                 return 
+       }
+
+       function writeDogtypeMessageThree(){
+              if (usersDogtype == "3"){
                      document.write("Hey, " + usersName + ", I'm going to have to agree with you on your favorite dog type! Us shaggy guys gotta stick together!");
                  } 
                  return 
