@@ -1,7 +1,10 @@
 'use strict';
     
        function getName(){
-              const theirName = prompt("By the way, what's your name?");
+              let theirName = prompt("By the way, what's your name?");
+              while (theirName == ""){
+                     theirName = prompt("Wait, everyone has a name! What's yours?"); 
+              }
               console.log("User says their name is " + theirName);
               return theirName;
        }
@@ -13,11 +16,11 @@
        function getDogFan(){
               const theirDogFan = prompt("Are you a fan of dogs?");
               console.log("User says " + theirDogFan + " to if they're a fan of dogs.");
-              if (theirDogFan == "Yes"){
+              if (theirDogFan.toLowerCase() == "yes"){
                      alert ("Good choice. We like you already!")
-                     } else if (theirDogFan == "yes"){
+                     } else if (theirDogFan.toLowerCase() == "yep"){
                      alert ("Good choice. We like you already!")
-                     } else if (theirDogFan == "yep"){
+                     } else if (theirDogFan.toLowerCase() == "yeah"){
                      alert ("Good choice. We like you already!")
                      } else {
                      alert ("Can't agree with you there, but let's move on, shall we?")
@@ -73,25 +76,32 @@
                  } 
        }
 
+
+       function howManyDogs(){
+              let dogCount = prompt("How many dogs should one person have!?");
+
+              for (let i = 0; i < dogCount; i++) {
+                     document.write('<img class="loop-img" src="pawprints.png" alt="paw prints">');
+              }
+       }
+
        
 
-     
-
-
        // if (this is true) {execute this code}
-
-       if (usersName == "Kassie"){
-        document.write(" Hiya teach!");
-       } else if (usersName == "Adam"){
-        document.write(" YOU DA BOMB!");
-       } else if (usersName == "Cameron"){
-        document.write(" YOU DA BOMB!");
-       } else if (usersName == "Cameron Walden"){
-        document.write(" YOU DA BOMB!");
-       } else if (usersName == "Adam Owada"){
-        document.write(" YOU DA BOMB!");
-       } else {
-        alert("Fantastic, we're glad to have you here!");
+       function specialMessageToUser(){
+              if (usersName == "Kassie"){
+               document.write(" Hiya teach!");
+              } else if (usersName == "Adam"){
+               document.write(" YOU DA BOMB!");
+              } else if (usersName == "Cameron"){
+               document.write(" YOU DA BOMB!");
+              } else if (usersName == "Cameron Walden"){
+               document.write(" YOU DA BOMB!");
+              } else if (usersName == "Adam Owada"){
+               document.write(" YOU DA BOMB!");
+              } else {
+               alert("Fantastic, we're glad to have you here!");
+              }
        }
 
        // FUNCTIONS!!!
